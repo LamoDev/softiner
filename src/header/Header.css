@@ -1,0 +1,221 @@
+/* header {
+    background-color: #c3c3c33c;
+    width: 50%;
+    font-family: myFont1;
+    height: 100px;
+    justify-content:space-around;
+    align-items: center;
+    box-shadow: rgba(126, 51, 51, 0.2) 0px 2px 8px 0px;
+    position: fixed;
+    top: 20px;
+    z-index: 2000; 
+    padding: 5px;
+    left: 50%; 
+    transform: translateX(-50%);
+    border-radius: 20px;
+} */
+header {
+    background-color: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 100px;
+    border-radius: 20px;
+    padding: 5px;
+    z-index: 2000;
+    box-shadow: rgba(126, 51, 51, 0.2) 0px 2px 8px 0px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+   
+}
+
+
+.logo img{
+  height:50px
+}
+
+.nav-bar ul{
+    flex-direction: row;
+    list-style:none;
+    gap: 20px;
+    justify-content: space-between;
+ 
+}
+.nav-bar ul li{
+transition:0.5s;
+
+}
+.nav-bar ul li a{
+    transition:0.5s;
+    text-decoration: none;
+    font-size:1.5rem;
+    color:var(--blue) ;
+    font-family: myfont1;
+    
+    }
+.nav-bar ul li a:hover{
+    color:var(--lightBlue) ;
+    font-size:1.6rem; ;
+}
+
+/* .user-button{
+    padding:5px 10px;
+
+    margin-left:20px;
+    display: none;
+    font-size: 3rem;
+    border: none;
+    transition: 0.5s;
+    background-color: #ffff;
+    color: var(--blue) ;
+
+} */
+
+.user-button{
+    color: var(--blue) ;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+}
+
+
+.menu-button{
+    padding:5px 10px;
+    margin-left:20px;
+    display: none;
+    font-size: 2rem;
+    border: none;
+    transition: 0.5s;
+    background: none;
+    color: var(--blue) ;
+   }
+   .menu-button:hover{
+    color:var(--lightBlue) ;
+    font-size: 2.2rem;
+
+   }
+   /* pop up menu*/
+    header .fixed {
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    /* background-color: rgba(46, 46, 50, 0.7);
+    backdrop-filter: blur(6px); */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    }
+    @keyframes popup {
+        0%   {scale:0;}
+        60%   {scale:1.2;} 
+        100%   {scale:1;}
+    }
+    .close-icon{
+        font-size: 1.5rem;
+        border-radius: 50%;
+        padding:1rem;
+        border: none;
+        color:var(--blue) ;
+        transition: 0.5s ;
+        background: none;
+    }
+
+    /* .close-icon:hover{
+        color:var(--lightBlue) ;
+        rotate:180deg;
+    } */
+    
+      
+    header .fixed ul.menu-box {
+        animation: popup 0.7s 1; 
+        width: 90%;
+        max-width: 500px;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        padding: 2rem;
+        list-style: none;
+        background-color: rgb(236, 236, 236);
+        border: 1px solid var(--primaryFont);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    header .fixed ul.menu-box li{
+        border-bottom:1px solid #2a909978 ;
+        padding-bottom: 0.5rem;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    header .fixed ul.menu-box li:last-child{
+        border: none;
+       
+        }
+        header .fixed ul.menu-box :first-child{
+            border: none;
+            text-align: right;
+            padding-bottom: 0;
+            padding-top: 0.2rem;
+            
+          
+            }
+    header .fixed ul.menu-box li a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:var(--blue) ;
+    font-weight: 600;
+    transition: 0.5s;
+    font-family: myfont1;
+    }
+    header .fixed ul.menu-box li a:hover{
+        color:var(--lightBlue)  ; 
+        font-size:1.25rem; ;
+    }
+    
+
+
+@media (max-width: 1200px) {
+    header{
+      justify-content: space-between;  
+      width: 80%;
+
+    }
+
+    .menu-button{
+        display: block;
+    }
+    .nav-bar{
+        display: none;
+     }
+    .user-button{
+        display: none;
+
+     }
+     .logo img{
+        margin: 0;
+    }
+
+    }
+
+
+
+
+@media (max-width: 800px) {
+    header{
+        height: 60px;
+    }
+    }
+    @media (max-width: 400px){
+
+        .menu-button{
+            margin-left:2px;
+          
+        }
+    
+    }
+    

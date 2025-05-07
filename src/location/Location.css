@@ -1,0 +1,52 @@
+.location-section {
+    width: 100%;
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #006870, rgba(217, 180, 100,0.7)); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    margin: 70px auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+
+  }
+  .location-title{
+    color:#ffff;
+    font-family: myfont3;
+    font-size: 3rem;
+    text-align: right;
+
+}
+
+  .location-title{
+    max-width: 600px;
+  }
+
+
+  .map-image {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+  }
+
+ 
+
+  @media (max-width: 750px) {
+    .location-section {
+        padding-top: 50px;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .location-title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    }
+    @media (max-width: 400px){
+        .main-title{
+            font-size: 2.8em;
+        }
+    
+    }

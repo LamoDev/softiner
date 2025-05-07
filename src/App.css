@@ -1,0 +1,40 @@
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app-container > * {
+  animation: fadeIn 0.5s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add hover effects for interactive elements */
+.app-container button,
+.app-container a {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.app-container button:hover,
+.app-container a:hover {
+  transform: translateY(-2px);
+ 
+}
+
+
+

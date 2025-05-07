@@ -1,0 +1,101 @@
+.slider-container {
+  width: 90%;
+  margin: 40px auto;
+  overflow: visible;
+  direction: rtl;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(214, 214, 214, 0.5);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 0 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.card:hover {
+  background-color: rgba(214, 214, 214, 0.778);
+  
+}
+
+.card img {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: myfont1;
+  color: #898885cc;
+}
+
+.card-header p {
+  color: gray;
+  margin: 5px 0 10px;
+  font-family: myfont1;
+}
+
+.card-body h4 {
+  margin: 10px 0 5px;
+  font-family: myfont3;
+  font-size: 1.5rem;
+  color:var(--golden)
+}
+
+.card-body p {
+  margin-bottom: 10px;
+  font-family: myfont1;
+  color: #898885cc;
+}
+
+.contact-button {
+  padding: 8px 16px;
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: myfont1;
+}
+
+.contact-button:hover {
+  background-color: var(--lightBlue);
+}
+
+/* أزرار السلايدر */
+.slick-prev, .slick-next {
+  z-index: 10;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  font-size: 20px;
+  color: white;
+}
+
+.slick-prev {
+  left: -20px;
+}
+
+.slick-next {
+  right: -20px;
+}
+
+.losts-title{
+  color:var(--blue);
+  font-family: myfont3;
+  font-size: 4.3em;
+  margin-bottom: 20px;
+}

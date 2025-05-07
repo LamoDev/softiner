@@ -1,0 +1,99 @@
+.body {
+    min-height:70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+/* .main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px; /* Padding to provide spacing } */
+
+    .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    
+        background-image:
+         url('/assets/images/softiner4.png'); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        color: white; 
+        text-align: center;
+    }
+    
+
+.title {
+    color:var(--blue);
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    font-family: myfont3;
+    max-width: 1200px;
+    line-height:1.4em;
+    text-align:center ;
+    margin-top:50px;
+
+}
+
+.msg {
+    color:var(--golden);
+    font-size: 2em;
+    letter-spacing: 1px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 24px;
+    font-family: myfont1;
+    max-width: 900px;
+}
+
+
+@media (max-width: 850px) {
+    .main {
+        padding: 20px; 
+    }
+     .title {
+       margin-top: 20px;
+        font-size: 3.5em; 
+       
+    }
+    .msg{
+        font-size: 1.5em;
+        line-height: 25px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .title {
+        margin-top: 50px;
+        font-size: 3em; 
+    }
+    .msg{
+        font-size: 1.2em;
+    }
+    
+}
+
+@media (max-width: 450px) {
+
+    .title {
+        margin-top: 70px;
+        font-size: 2.8em; 
+    }
+    .msg{
+        font-size: 1em;
+    }}

@@ -1,0 +1,40 @@
+@font-face {
+  font-family:myFont1 ;
+  src: url(/assets/fonts/Tajawal/Tajawal-Regular.ttf);
+}
+@font-face {
+  font-family:myFont2 ;
+  src: url(/assets/fonts/Tajawal/Tajawal-Black.ttf);
+}
+@font-face {
+  font-family:myFont3 ;
+  src: url(/assets/fonts/Tajawal/Tajawal-Bold.ttf);
+}
+
+*{
+  margin: 0;
+  padding:0;
+}
+
+:root{
+  --primaryFont:#DECFEC;
+  --blue:#2C848D;
+  --lightBlue:#2A8F99;
+  --golden:#C5A154;
+  --mauve:#D9BEF4;
+  --purple:#8D70AA;
+
+}
+
+body {
+  background-color:#FFF9EF;
+ 
+
+}
+
+.flex{
+  display:flex;
+}
+.border{
+  border:1px solid red
+}
