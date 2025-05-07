@@ -1,0 +1,128 @@
+/* Welcome Component Styles */
+.welcome-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF9EF;
+    direction: rtl;
+}
+.welcome-content {
+    display: flex;
+    width: 90%;
+    background-color: #fcf0db;
+    max-width: 1200px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.welcome-left {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .illustration {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    background-color: #f0f9f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.illustration img {
+    height: 400px;
+    background-color: #f0f9f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-right {
+    flex: 1;
+    padding: 3rem;
+    background-color: white;
+}
+
+.welcome-title {
+    color: #4A9B9B;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: right;
+    font-family: myfont3;
+}
+
+.welcome-subtitle {
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: right;
+    font-family: myfont1;
+    color: var(--golden);
+
+}
+
+.welcome-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-input {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #4A9B9B;
+    background-color: white;
+}
+
+.form-input::placeholder {
+    color: #999;
+    font-family: myfont1;
+}
+
+.submit-button {
+    background-color: #4A9B9B;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    font-family: myfont3;
+}
+
+.submit-button:hover {
+    background-color: #3d8181;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome-content {
+        flex-direction: column;
+    }
+
+    .welcome-left {
+        display: none; /* Hide illustration on mobile */
+    }
+
+    .welcome-right {
+        padding: 2rem;
+    }
+}
